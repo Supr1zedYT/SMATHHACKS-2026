@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/globe.gl"></script>
+  <style>
+    body { margin:0; }
+    #globeViz { width:100vw; height:100vh; }
+  </style>
+</head>
+
+<body>
+<div id="globeViz"></div>
+
+<script>
+const globe = Globe()
+(document.getElementById("globeViz"))
+.globeImageUrl("//unpkg.com/three-globe/example/img/earth-blue-marble.jpg");
+
+globe.onGlobeClick((coords) => {
+  console.log("Latitude:", coords.lat);
+  console.log("Longitude:", coords.lng);
+});
+</script>
+
+</body>
+</html>
