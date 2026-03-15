@@ -157,7 +157,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
           <p>Species Count: {nearestReef.species_count}</p>
           <br>
           </br>
-          p><strong>Species Info</strong></p>
+          <p><strong>Species Info</strong></p>
           <li>{speciesByReef.map((species) => (
             <li key={species.id}>
               <p>Species: {species.species_name}</p>
